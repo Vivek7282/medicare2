@@ -4,9 +4,7 @@
 
 <?php
 session_start();
-require 'config.php';
-
-echo '1';
+require_once('config.php');
 //user login code
 if(isset($_POST['addUser']))
 {
@@ -23,7 +21,7 @@ if(isset($_POST['addUser']))
             $_SESSION['userId'] = $row->USER_ID;
             $_SESSION['userName'] = $row->NAME;
             $_SESSION['usePic'] = $row->IMAGE;  
-            header('location : adminDashboard.php');
+            header('location:adminDashboard.php');
         }
     }
     else{
