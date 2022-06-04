@@ -157,12 +157,12 @@ if(!isset($_SESSION['userId']))
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="addCities.php">
+            <a href="addCiity.php">
               <i class="bi bi-circle"></i><span>Add Cities</span>
             </a>
           </li>
           <li>
-            <a href="viewCities.php">
+            <a href="viewCitie.php">
               <i class="bi bi-circle"></i><span>View Cities</span>
             </a>
           </li>
@@ -176,7 +176,7 @@ if(!isset($_SESSION['userId']))
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="addDepart.php">
+            <a href="addDeprt.php">
               <i class="bi bi-circle"></i><span>Add Departments</span>
             </a>
           </li>

@@ -6,48 +6,48 @@
             <div class="card-body">
               <h5 class="card-title">Add_Doctor</h5>
 
-<form>
+<form method="get">
                 <div class="row mb-3">
               
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Your Name</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputText">
+                    <input type="text" class="form-control" id="inputText" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                   <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail">
+                    <input type="email" class="form-control" id="inputEmail" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Address</label>
                   <div class="col-sm-10">
-                    <input type="address" class="form-control" id="inputaddress">
+                    <input type="address" class="form-control" id="inputaddress" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Contact</label>
                   <div class="col-sm-10">
-                    <input type="contact" class="form-control" id="inputContact">
+                    <input type="contact" class="form-control" id="inputContact" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Date_of_Birth</label>
                   <div class="col-sm-10">
-                    <input type="date" class="form-control" name='dob' id="inputEmail">
+                    <input type="date" class="form-control" name='dob' id="inputDob" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Image</label>
                   <div class="col-sm-10">
-                    <input type="file" class="form-control" name='photo' id="inputImage">
+                    <input type="file" class="form-control" name='photo' id="inputImage" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                   <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword">
+                    <input type="password" class="form-control" id="inputPassword" required>
                   </div>
                 </div>
                 <fieldset class="row mb-3">

@@ -8,6 +8,7 @@ require_once('config.php');
 //user login code
 if(isset($_POST['addUser']))
 {
+
     $email=$_POST['email'];
     $pass=md5($_POST['pass']);
 
@@ -29,6 +30,54 @@ if(isset($_POST['addUser']))
     }
 
 }
+
+// add cities
+if(isset($_POST['addCity']))
+{
+   
+    $name=$_POST['cname'];
+   
+
+
+    $query="insert into  CITIES(CITY_NAME) values ('$name')";
+    
+    
+        if($mysqli->query($query) === true)
+    {
+       
+            header('location:addCiity.php?msg = City Added Successfully');
+        
+    }
+    else{ 
+
+        header('location:addCiity.php?msg= City Not added ');
+    }
+
+}
+
+
+// Add Department
+
+if(isset($_POST['addDept']))
+{
+    $name=$_POST['dname'];
+   
+
+
+    $query= "INSERT INTO DEPARTMENT (D_name) values ('$name') ";
+
+    if($mysqli->query($query)===true)
+    {
+        
+            header('location:addDeprt.php?msg = Department Added Successfully');
+        
+    }
+    else{
+        header('location:addDeprt.php?msg =Department Not Added ');
+    }
+
+}
+
 
 
 
