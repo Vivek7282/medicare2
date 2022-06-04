@@ -35,11 +35,11 @@ if(isset($_POST['addUser']))
 if(isset($_POST['addCity']))
 {
    
-    $name=$_POST['cname'];
+    $name1=$_POST['cname'];
    
 
 
-    $query="insert into  CITIES(CITY_NAME) values ('$name')";
+    $query="INSERT INTO CITIES(CITY_NAME) VALUES ('$name1')";
     
     
         if($mysqli->query($query) === true)
@@ -79,6 +79,64 @@ if(isset($_POST['addDept']))
 }
 
 
+
+// Add Doctors
+
+
+if(isset($_POST['addDoc']))
+{
+    $name=$_POST['fname'];
+    $email=$_POST['email'];
+    $add=$_POST['add'];
+    $pass=$_POST['pass'];
+    $contact=$_POST['contact'];
+    $dob=$_POST['dob'];
+    $city=$_POST['city'];
+    $dept=$_POST['depart'];
+
+
+
+if(isset($_FILES["photo"])&& $_FILES["photo"]["error"]==0){
+    $allow =array("jpg"=> "image/jpg","jepg"=>"image/jepg","gif"=> "image/gif","png"=>"image/png");
+    $filename=$FILES["photo"]['name'];
+    $filetype=$FILES["photo"]['type'];
+    $filesize=$FILES["photo"]['size'];
+}
+$ext= pathinfo($filename, PATHINFO_EXTENSION);
+if(!array_key_exists($set,$allowed))die("Error:Please select a valid file format");
+
+$maxsize=1*1024*1024;
+if($filesize>$maxsize)die("Error: File size is larger than the upper limit");
+if(in_array($filesize),$allowed);
+
+if(file_exists("userImages/" .uniqid().$filename)){
+echo $filename . "is already exists";}
+else{
+    $path="userImages/" . $filename;
+
+}
+
+$query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,password,ADDRESS,D.O.B,PIC,CITY_ID,D_ID) 
+
+VALUES($fname,$email,$contact,$pass,$add,$dob,$path,$city,$depart)"
+
+
+
+
+   
+
+    if($mysqli->query($query)===true)
+    {
+        
+            move_uploaded_files($_FILES["photo"]["tmp_name"],"$path");
+            header('location:addDoc.php?msg =Data Added Successfully '); 
+        
+    }
+    else{
+        header('location:addDoc.php?msg = ERROR ');
+    }
+
+}
 
 
 ?>

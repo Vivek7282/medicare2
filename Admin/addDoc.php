@@ -6,30 +6,30 @@
             <div class="card-body">
               <h5 class="card-title">Add_Doctor</h5>
 
-<form method="get">
+<form method="post" action="function.php" enctype="multipart/form-data">
                 <div class="row mb-3">
               
-                  <label for="inputEmail3" class="col-sm-2 col-form-label">Your Name</label>
+                  <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
                   <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputText" required>
+                    <input type="text" class="form-control" id="inputText"name="fname" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
                   <div class="col-sm-10">
-                    <input type="email" class="form-control" id="inputEmail" required>
+                    <input type="email" class="form-control" id="inputEmail" name="email"required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Address</label>
                   <div class="col-sm-10">
-                    <input type="address" class="form-control" id="inputaddress" required>
+                    <input type="address" class="form-control" id="inputaddress"name="add" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Contact</label>
                   <div class="col-sm-10">
-                    <input type="contact" class="form-control" id="inputContact" required>
+                    <input type="contact" class="form-control" id="inputContact" name="contact"required>
                   </div>
                 </div>
                 <div class="row mb-3">
@@ -38,16 +38,74 @@
                     <input type="date" class="form-control" name='dob' id="inputDob" required>
                   </div>
                 </div>
+
+
+
+                
                 <div class="row mb-3">
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Image</label>
                   <div class="col-sm-10">
                     <input type="file" class="form-control" name='photo' id="inputImage" required>
                   </div>
                 </div>
+
+
+
+                <div class="row mb-3">
+                  <label for="city_name" class="col-sm-2 col-form-label">Select City</label>
+                  <div class="col-sm-10">
+                    <select name="city" calss="form-control">
+                        <option>Select City</option>
+                        <?php
+                        require('config.php');
+                        $query= "SELECT * FROM CITIES ";
+
+    if($result= $mysqli->query($query))
+    {
+        while($row=$result->fetch_object())
+        {
+     ?> 
+     <option value ="<?php echo  $row-> CITY_ID;?> "><?php echo  $row-> CITY_NAME;?></option>
+
+        <?php
+        }
+    }
+                    ?>
+                     </select>
+                  </div>
+                </div>
+
+                <div class="row mb-3">
+                  <label for="Department_name" class="col-sm-2 col-form-label">Select Department</label>
+                  <div class="col-sm-10">
+                    <select name="depart" calss="form-control">
+                        <option>Select Department</option>
+                        <?php
+                        require('config.php');
+                        $query= "SELECT * FROM DEPARTMENT ";
+
+    if($result= $mysqli->query($query))
+    {
+        while($row=$result->fetch_object())
+        {
+     ?> 
+     <option value ="<?php echo  $row-> D_ID;?> "><?php echo  $row-> D_name;?></option>
+
+        <?php
+        }
+    }
+                    ?>
+                    </select>
+                  </div>
+                </div>
+
+                
+
+
                 <div class="row mb-3">
                   <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
                   <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword" required>
+                    <input type="password" class="form-control" id="inputPassword"name="pass" required>
                   </div>
                 </div>
                 <fieldset class="row mb-3">
@@ -68,18 +126,9 @@
                    
                   </div>
                 </fieldset>
-                <div class="row mb-3">
-                  <div class="col-sm-10 offset-sm-2">
-                    <div class="form-check">
-                      <input class="form-check-input" type="checkbox" id="gridCheck1">
-                      <label class="form-check-label" for="gridCheck1">
-                        Example checkbox
-                      </label>
-                    </div>
-                  </div>
-                </div>
+               
                 <div class="text-center">
-                  <button type="submit" class="btn btn-primary" value="Add Doctor">Add_Doctor</button>
+                  <button type="submit" class="btn btn-primary" value="Add Doctor" name="addDoc">Add_Doctor</button>
                   <button type="reset" class="btn btn-secondary">Reset</button>
                 </div>
                 
