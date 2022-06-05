@@ -27,6 +27,7 @@ Add city
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary" value="Add City" name="addCity">Add_City</button>
+                  <input type="button"class ="btn btn-primary" onclick="location.href='viewCitie.php';" value="List_of_Cities" />
                   <?php
 if(isset($_GET['msg']))
 {

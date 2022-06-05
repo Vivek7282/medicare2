@@ -16,16 +16,16 @@
                 </div>
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary" value="Add Department" name="addDept">Add_Department</button>
-                 
-                </div>
-                
-            </form>
-            <?php
+                  <?php
            if(isset($_GET['msg']))
             {
                  echo $_GET['msg'];
             }
-              ?>
+              ?> 
+                </div>
+                
+            </form>
+            
 
               
               </div>

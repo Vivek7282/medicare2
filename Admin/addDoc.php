@@ -6,7 +6,7 @@
             <div class="card-body">
               <h5 class="card-title">Add_Doctor</h5>
 
-<form method="post" action="function.php" enctype="multipart/form-data">
+<form method="POST" action="function.php" enctype="multipart/form-data">
                 <div class="row mb-3">
               
                   <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
@@ -108,7 +108,7 @@
                     <input type="password" class="form-control" id="inputPassword"name="pass" required>
                   </div>
                 </div>
-                <fieldset class="row mb-3">
+                <!-- <fieldset class="row mb-3">
                   <legend class="col-form-label col-sm-2 pt-0">Status</legend>
                   <div class="col-sm-10">
                     <div class="form-check">
@@ -125,7 +125,7 @@
                     </div>
                    
                   </div>
-                </fieldset>
+                </fieldset> -->
                
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary" value="Add Doctor" name="addDoc">Add_Doctor</button>
