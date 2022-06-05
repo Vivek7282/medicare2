@@ -101,21 +101,17 @@ if(isset($_FILES["photo"])&& $_FILES["photo"]["error"]==0){
     $filename=$_FILES["photo"]['name'];
     $filetype=$_FILES["photo"]['type'];
     $filesize=$_FILES["photo"]['size'];
-}
+
 $ext= pathinfo($filename, PATHINFO_EXTENSION);
 if(!array_key_exists($ext,$allowed))die("Error:Please select a valid file format");
 
 $maxsize=1*1024*1024;
 if($filesize>$maxsize)die("Error: File size is larger than the upper limit");
-if(in_array($filetype,$allowed));
-
+if(in_array($filetype,$allowed)){
 if(file_exists("userImages/" .$filename)){
 echo $filename . "is already exists";}
 else{
-    $path="userImages/" .uniqid(). $filename;
-
-}
-
+     $path="userImages/" .uniqid(). $filename;
 $query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,passwor,ADDRES,D.O.B,pic,CITY_ID,D_ID) VALUES($name,$email,$contact,$pass,$add,$dob,$path,$city,$dept)";
 
     if($mysqli->query($query)===true)
@@ -123,13 +119,26 @@ $query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,passwor,ADDRES,D.O.B,pic,CITY_I
         
             move_uploaded_files($_FILES["photo"]["tmp_name"], $path);
             header('location:addDoc.php?msg =Data Added Successfully '); 
-        
     }
+    }
+}
     else{
-        header('location:addDoc.php?msg = ERROR ');
+        header('location:addDoc.php?msg = ERROR1 ');
     }
+    // move_uploaded_file($_FILES["photo"]["tmp_name," ]);
+
 
 }
+else{
+    echo "ERROR :There was a problem in uploading your file. Please try again";
+}
+
+}
+else{
+    echo "ERROR " .$_FILES["photo"]["error"];
+}
+
+
 
 
 ?>
