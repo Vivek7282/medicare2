@@ -112,7 +112,7 @@ if(file_exists("userImages/" .$filename)){
 echo $filename . "is already exists";}
 else{
      $path="userImages/" .uniqid(). $filename;
-$query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,passwor,ADDRES,D.O.B,pic,CITY_ID,D_ID) VALUES($name,$email,$contact,$pass,$add,$dob,$path,$city,$dept)";
+$query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,passwor,ADDRES,D.O.B,pic,CITY_ID,D_ID) VALUES('$name','$email','$contact','$pass','$add','$dob','$path','$city','$dept')";
 
     if($mysqli->query($query)===true)
     {
