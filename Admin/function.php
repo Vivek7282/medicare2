@@ -98,9 +98,9 @@ if(isset($_POST['addDoc']))
 
 if(isset($_FILES["photo"])&& $_FILES["photo"]["error"]==0){
     $allowed =array("jpg"=> "image/jpg","jepg"=>"image/jepg","gif"=> "image/gif","png"=>"image/png");
-    $filename=$_FILES["photo"]['name'];
-    $filetype=$_FILES["photo"]['type'];
-    $filesize=$_FILES["photo"]['size'];
+    $filename=$_FILES["photo"]["name"];
+    $filetype=$_FILES["photo"]["type"];
+    $filesize=$_FILES["photo"]["size"];
 
 $ext= pathinfo($filename, PATHINFO_EXTENSION);
 if(!array_key_exists($ext,$allowed))die("Error:Please select a valid file format");
@@ -112,13 +112,13 @@ if(file_exists("userImages/" .$filename)){
 echo $filename . "is already exists";}
 else{
      $path="userImages/" .uniqid(). $filename;
-$query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,passwor,ADDRES,D.O.B,pic,CITY_ID,D_ID) VALUES($name,$email,$contact,$pass,$add,$dob,$path,$city,$dept)";
+$query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,passwor,ADDRES,DOB,pic,CITY_ID,D_ID) VALUES ('$name','$email','$contact','$pass','$add','$dob','$path',$city,$dept)";
 
     if($mysqli->query($query)===true)
     {
-        
-            move_uploaded_files($_FILES["photo"]["tmp_name"], $path);
-            header('location:addDoc.php?msg =Data Added Successfully '); 
+        // header('location:index.php?msg=Data Added Successfully ');  
+            //  move_uploaded_files($_FILES["photo"]["tmp_name"], $path);
+            header('location:addDoc.php?msg=Data Added Successfully '); 
     }
     }
 }
