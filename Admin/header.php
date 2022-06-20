@@ -203,10 +203,10 @@ if(!isset($_SESSION['userId']))
         </ul>
       </li><!-- End Forms Nav -->
 
-
+<!-- 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Appointsments</span><i class="bi bi-chevron-down ms-auto"></i>
+          <i class="bi bi-journal-text"></i><span>Departments</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
             <a href="viewDepart.php">
@@ -215,10 +215,11 @@ if(!isset($_SESSION['userId']))
           </li>
           </li>
         </ul>
-      </li><!-- End Forms Nav -->
+      </li> -->
+      <!-- End Forms Nav -->
 
 
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
           <i class="bi bi-journal-text"></i><span>Dieases</span><i class="bi bi-chevron-down ms-auto"></i>
         </a>
@@ -234,8 +235,9 @@ if(!isset($_SESSION['userId']))
             </a>
           </li>
           </li>
-        </ul>
-      </li><!-- End Forms Nav -->
+        </ul> 
+       </li> -->
+      <!-- End Forms Nav -->
 
 
       <li class="nav-item">
