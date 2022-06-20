@@ -11,9 +11,7 @@ if(isset($_POST['addUser']))
 
     $email=$_POST['email'];
     $pass=md5($_POST['pass']);
-
-
-    $query= "SELECT * FROM USERS where email= '$email' and password='$pass' ";
+    $query= "SELECT * FROM USERS where email= '$email' and passwor='$pass' ";
 
     if($result= $mysqli->query($query))
     {
@@ -54,6 +52,67 @@ if(isset($_POST['addCity']))
     }
 
 }
+
+
+
+
+
+// Add User
+
+if(isset($_POST['adduser']))
+{
+    $fname=$_POST['fname'];
+    $email=$_POST['email'];
+    $pass=md5($_POST['pass']);
+    $contact=$_POST['contact'];
+   
+
+
+
+if(isset($_FILES["photo"])&& $_FILES["photo"]["error"] == 0){
+    $allowed =array("jpg"=> "image/jpg","jepg"=>"image/jepg","gif"=> "image/gif","png"=>"image/png");
+    $filename=$_FILES["photo"]["name"];
+    $filetype=$_FILES["photo"]["type"];
+    $filesize=$_FILES["photo"]["size"];
+
+$ext= pathinfo($filename, PATHINFO_EXTENSION);
+if(!array_key_exists($ext,$allowed))die("Error:Please select a valid file format");
+
+$maxsize=1*1024*1024;
+if($filesize>$maxsize)die("Error: File size is larger than the upper limit");
+if(in_array($filetype,$allowed)){
+if(file_exists("userImages/" .$filename)){
+echo $filename . "is already exists";}
+else{
+     $path="userImages/" .uniqid(). $filename;
+$query="INSERT INTO USERS(U_NAME,EMAIL,CONTACT,PASSWOR,IMAGES) VALUES ('$fname','$email','$contact','$pass','$path')";
+
+    if($mysqli->query($query)===true)
+    {
+        
+            //   move_uploaded_files($_FILES["photo"]["tmp_name"], $path);
+            header('location:addUser.php?msg=Data Added Successfully '); 
+    }
+    }
+}
+    else{
+        header('location:addUser.php?msg = ERROR2 ');
+    }
+    // move_uploaded_file($_FILES["photo"]["tmp_name," ]);
+
+
+}
+else{
+    echo "ERROR :There was a problem in uploading your file. Please try again";
+}
+
+}
+else{
+    echo "ERROR " .$_FILES["photo"]["error"];
+}
+
+
+
 
 
 // Add Department
@@ -117,7 +176,7 @@ $query="INSERT INTO DOCTORS(D_NAME,EMAIL,CONTACT,passwor,ADDRES,DOB,pic,CITY_ID,
     if($mysqli->query($query)===true)
     {
         
-            //  move_uploaded_files($_FILES["photo"]["tmp_name"], $path);
+            //   move_uploaded_files($_FILES["photo"]['tmp_name'], $path);
             header('location:addDoc.php?msg=Data Added Successfully '); 
     }
     }
