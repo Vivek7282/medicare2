@@ -11,7 +11,9 @@ if(isset($_POST['addUser']))
 
     $email=$_POST['email'];
     $pass=md5($_POST['pass']);
-    $query= "SELECT * FROM USERS where email= '$email' and passwor='$pass' ";
+
+
+    $query= "SELECT * FROM USERS where email= '$email' and password='$pass' ";
 
     if($result= $mysqli->query($query))
     {
@@ -63,17 +65,17 @@ if(isset($_POST['adduser']))
 {
     $fname=$_POST['fname'];
     $email=$_POST['email'];
-    $pass=md5($_POST['pass']);
+    $pass=$_POST['pass'];
     $contact=$_POST['contact'];
    
 
 
 
-if(isset($_FILES["photo"])&& $_FILES["photo"]["error"] == 0){
+if(isset($_FILES["photo1"])&& $_FILES["photo1"]["error"] == 0){
     $allowed =array("jpg"=> "image/jpg","jepg"=>"image/jepg","gif"=> "image/gif","png"=>"image/png");
-    $filename=$_FILES["photo"]["name"];
-    $filetype=$_FILES["photo"]["type"];
-    $filesize=$_FILES["photo"]["size"];
+    $filename=$_FILES["photo1"]["name"];
+    $filetype=$_FILES["photo1"]["type"];
+    $filesize=$_FILES["photo1"]["size"];
 
 $ext= pathinfo($filename, PATHINFO_EXTENSION);
 if(!array_key_exists($ext,$allowed))die("Error:Please select a valid file format");
@@ -90,7 +92,7 @@ $query="INSERT INTO USERS(U_NAME,EMAIL,CONTACT,PASSWOR,IMAGES) VALUES ('$fname',
     if($mysqli->query($query)===true)
     {
         
-            //   move_uploaded_files($_FILES["photo"]["tmp_name"], $path);
+            //   move_uploaded_files($_FILES["photo"]['tmp_name'], $path);
             header('location:addUser.php?msg=Data Added Successfully '); 
     }
     }
@@ -110,10 +112,6 @@ else{
 else{
     echo "ERROR " .$_FILES["photo"]["error"];
 }
-
-
-
-
 
 // Add Department
 

@@ -129,7 +129,14 @@
                
                 <div class="text-center">
                   <button type="submit" class="btn btn-primary" value="Add Doctor" name="addDoc">Add_Doctor</button>
+                  <?php
+           if(isset($_GET['msg']))
+            {
+                 echo $_GET['msg'];
+            }
+              ?>
                   <button type="reset" class="btn btn-secondary">Reset</button>
+
                 </div>
                 
 </form>
