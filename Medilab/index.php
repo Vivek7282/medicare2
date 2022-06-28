@@ -96,7 +96,7 @@
                         <div class="content">
                             <h3>Why Choose Medicare?</h3>
                             <p>
-                                We the team of distinguished doctrs and staffs members are always there to help out our patients in need at the earliest possible. With varities of facilities we come up with solutions to your queries.
+                                We are a team of distinguished doctors and staffs members, always there to help out our patients in need at the earliest possible. With varitiy of facilities, we come up with solutions to your queries.
                             </p>
                             <div class="text-center">
                                 <!-- <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
@@ -116,7 +116,7 @@
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-cube-alt"></i>
-                                        <h4>Appointmant Booking</h4>
+                                        <h4>Appointment Booking</h4>
                                         <p>You can book for an appointment according to the availabity of the doctors listed.</p>
                                     </div>
                                 </div>
@@ -124,7 +124,7 @@
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-images"></i>
                                         <h4>Queries Resolved</h4>
-                                        <p>All your queries regarding the departments, doctors, and facilities are available.</p>
+                                        <p>Answer to all your queries regarding departments, doctors, and facilities are available.</p>
                                     </div>
                                 </div>
                             </div>
@@ -147,26 +147,25 @@
                     </div>
 
                     <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                        <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                        <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit
-                            aut voluptate.</p>
+                        <h3>Facilities</h3>
+                        <p>We at Medicare, work day and night to provide the best experience and treatment to our patients and doctors. We </p>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                            <div class="icon"><i class="fa fa-wheelchair"></i></div>
+                            <h4 class="title"><a href="">Patient</a></h4>
+                            <p class="description">Sign up as patient, Book appointment, consult doctor and get solution to your problems. </p>
                         </div>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                            <div class="icon"><i class="fas fa-user-md"></i></div>
+                            <h4 class="title"><a href="">Doctor</a></h4>
+                            <p class="description">Register as doctor on our portal and get connected to the patients, schedule and edit appointments.</p>
                         </div>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-atom"></i></div>
-                            <h4 class="title"><a href="">Dine Pad</a></h4>
-                            <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                            <div class="icon"><i class="fas fa-user"></i></div>
+                            <h4 class="title"><a href="">Admin</a></h4>
+                            <p class="description">Only verified of Medicare can login and can add doctors, cities, patients and view and remove cities, doctors and patients.</p>
                         </div>
 
                     </div>
