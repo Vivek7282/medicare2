@@ -59,8 +59,13 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
+               
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto " href="../Doctor/index.php">Doctor's Portal</a></li>
+                <li><a class="nav-link scrollto " href="../Patient/index.php">Patient's Portal</a></li>
+                <li><a class="nav-link scrollto " href="../Admin/index.php">Admin Portal</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <!-- <li><a class="nav-link scrollto" href="#departments">Departments</a></li> -->
                     <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
@@ -96,7 +101,7 @@
                         <div class="content">
                             <h3>Why Choose Medicare?</h3>
                             <p>
-                                We are a team of distinguished doctors and staffs members, always there to help out our patients in need at the earliest possible. With varitiy of facilities, we come up with solutions to your queries.
+                                We the team of distinguished doctrs and staffs members are always there to help out our patients in need at the earliest possible. With varities of facilities we come up with solutions to your queries.
                             </p>
                             <div class="text-center">
                                 <!-- <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
@@ -116,7 +121,7 @@
                                 <div class="col-xl-4 d-flex align-items-stretch">
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-cube-alt"></i>
-                                        <h4>Appointment Booking</h4>
+                                        <h4>Appointmant Booking</h4>
                                         <p>You can book for an appointment according to the availabity of the doctors listed.</p>
                                     </div>
                                 </div>
@@ -124,7 +129,7 @@
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-images"></i>
                                         <h4>Queries Resolved</h4>
-                                        <p>Answer to all your queries regarding departments, doctors, and facilities are available.</p>
+                                        <p>All your queries regarding the departments, doctors, and facilities are available.</p>
                                     </div>
                                 </div>
                             </div>
@@ -143,29 +148,30 @@
 
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+                        <a href="https://www.https://www.youtube.com/watch?v=K21uaDuNYGM" class="glightbox play-btn mb-4"></a>
                     </div>
 
                     <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                        <h3>Facilities</h3>
-                        <p>We at Medicare, work day and night to provide the best experience and treatment to our patients and doctors. We </p>
+                        <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
+                        <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit
+                            aut voluptate.</p>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="fa fa-wheelchair"></i></div>
-                            <h4 class="title"><a href="">Patient</a></h4>
-                            <p class="description">Sign up as patient, Book appointment, consult doctor and get solution to your problems. </p>
+                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
+                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
                         </div>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="fas fa-user-md"></i></div>
-                            <h4 class="title"><a href="">Doctor</a></h4>
-                            <p class="description">Register as doctor on our portal and get connected to the patients, schedule and edit appointments.</p>
+                            <div class="icon"><i class="bx bx-gift"></i></div>
+                            <h4 class="title"><a href="">Nemo Enim</a></h4>
+                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
                         </div>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="fas fa-user"></i></div>
-                            <h4 class="title"><a href="">Admin</a></h4>
-                            <p class="description">Only verified of Medicare can login and can add doctors, cities, patients and view and remove cities, doctors and patients.</p>
+                            <div class="icon"><i class="bx bx-atom"></i></div>
+                            <h4 class="title"><a href="">Dine Pad</a></h4>
+                            <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
                         </div>
 
                     </div>
@@ -184,7 +190,12 @@
                     <div class="col-lg-5 col-md-10">
                         <div class="count-box">
                             <i class="fas fa-user-md"></i>
+
+                        
                             <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                        
+                        
+                           
                             <p>Doctors</p>
                         </div>
                     </div>
@@ -197,21 +208,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="fas fa-flask"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Research Labs</p>
-            </div>
-          </div> -->
-
-                    <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="fas fa-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
-            </div>
-          </div> -->
+                   
 
                 </div>
 
@@ -1080,6 +1077,8 @@
                 <div class="copyright">
                     &copy; Copyright <strong><span>Medicare</span></strong>. All Rights Reserved
                 </div>
+                </div>
+    
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->
                     <!-- You can delete the links only if you purchased the pro version. -->
