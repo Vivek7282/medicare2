@@ -1,11 +1,22 @@
 <?php include('header.php');?>
-
+<main id="main" class="main">
 <div class ="row">
     <div class ="col-lg-12">
         <section class ="panel">
             <header class="panel-heading">
                 Cities_Record
 </header>
+
+<?php
+if(isset($_GET['msg'])){
+    echo $_GET['msg'];
+}
+
+?>
+
+
+
+
 <table class="table table-striped table-advance table-hove">
     <tbody>
         <tr>
@@ -62,7 +73,7 @@ require_once('config.php');
 </section>
 </div>
 </div>
-
+</main>
 
 
 <?php include('footer.php');?>

@@ -1,5 +1,5 @@
 <?php include('header.php');?>
-
+<main id="main" class="main">
 <div class ="row">
     <div class ="col-lg-12">
         <section class ="panel">
@@ -87,5 +87,5 @@ require_once('config.php');
 </div>
 
 
-
+</main>
 <?php include('footer.php');?>

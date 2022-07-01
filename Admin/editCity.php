@@ -1,6 +1,6 @@
 
 <?php
-
+<main id="main" class="main">
 require_once('config.php');
 if(isset($_POST['updCity']))
 {
@@ -91,4 +91,5 @@ require_once('config.php');
               </div>
               
               </div>
+        </main>
               <?php include ('footer.php');?>

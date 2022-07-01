@@ -59,8 +59,13 @@
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
+               
                     <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+                    
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
+                    <li><a class="nav-link scrollto " href="../Doctor/index.php">Doctor's Portal</a></li>
+                <li><a class="nav-link scrollto " href="../Patient/index.php">Patient's Portal</a></li>
+                <li><a class="nav-link scrollto " href="../Admin/index.php">Admin Portal</a></li>
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <!-- <li><a class="nav-link scrollto" href="#departments">Departments</a></li> -->
                     <li><a class="nav-link scrollto" href="#doctors">Doctors</a></li>
@@ -96,7 +101,7 @@
                         <div class="content">
                             <h3>Why Choose Medicare?</h3>
                             <p>
-                                We the team of distinguished doctrs and staffs members are always there to help out our patients in need at the earliest possible. With varities of facilities we come up with solutions to your queries.
+                                We are a team of distinguished doctors and staffs members, always there to help out our patients in need at the earliest possible. With varitiy of facilities, we come up with solutions to your queries.
                             </p>
                             <div class="text-center">
                                 <!-- <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
@@ -124,7 +129,7 @@
                                     <div class="icon-box mt-4 mt-xl-0">
                                         <i class="bx bx-images"></i>
                                         <h4>Queries Resolved</h4>
-                                        <p>All your queries regarding the departments, doctors, and facilities are available.</p>
+                                        <p>Answer to all your queries regarding departments, doctors, and facilities are available.</p>
                                     </div>
                                 </div>
                             </div>
@@ -143,32 +148,30 @@
 
                 <div class="row">
                     <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch position-relative">
-                        <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox play-btn mb-4"></a>
+                        <a href="https://www.https://www.youtube.com/watch?v=K21uaDuNYGM" class="glightbox play-btn mb-4"></a>
                     </div>
 
                     <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5">
-                        <h3>Enim quis est voluptatibus aliquid consequatur fugiat</h3>
-                        <p>Esse voluptas cumque vel exercitationem. Reiciendis est hic accusamus. Non ipsam et sed minima temporibus laudantium. Soluta voluptate sed facere corporis dolores excepturi. Libero laboriosam sint et id nulla tenetur. Suscipit
-                            aut voluptate.</p>
+                        <h3>Facilities</h3>
+                        <p>We at Medicare, work day and night to provide the best experience and treatment to our patients and doctors. We </p>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-fingerprint"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
-                            <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+                            <div class="icon"><i class="fa fa-wheelchair"></i></div>
+                            <h4 class="title"><a href="../Patient/index.php">Patient</a></h4>
+                            <p class="description">Sign up as patient, Book appointment, consult doctor and get solution to your problems. </p>
                         </div>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-gift"></i></div>
-                            <h4 class="title"><a href="">Nemo Enim</a></h4>
-                            <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+                            <div class="icon"><i class="fas fa-user-md"></i></div>
+                            <h4 class="title"><a href="../Doctor/index.php">Doctor</a></h4>
+                            <p class="description">Register as doctor on our portal and get connected to the patients, schedule and edit appointments.</p>
                         </div>
 
                         <div class="icon-box">
-                            <div class="icon"><i class="bx bx-atom"></i></div>
-                            <h4 class="title"><a href="">Dine Pad</a></h4>
-                            <p class="description">Explicabo est voluptatum asperiores consequatur magnam. Et veritatis odit. Sunt aut deserunt minus aut eligendi omnis</p>
+                            <div class="icon"><i class="fas fa-user"></i></div>
+                            <h4 class="title"><a href="../Admin/index.php">Admin</a></h4>
+                            <p class="description">Only verified of Medicare can login and can add doctors, cities, patients and view and remove cities, doctors and patients.</p>
                         </div>
-
                     </div>
                 </div>
 
@@ -185,7 +188,12 @@
                     <div class="col-lg-5 col-md-10">
                         <div class="count-box">
                             <i class="fas fa-user-md"></i>
+
+                        
                             <span data-purecounter-start="0" data-purecounter-end="85" data-purecounter-duration="1" class="purecounter"></span>
+                        
+                        
+                           
                             <p>Doctors</p>
                         </div>
                     </div>
@@ -198,21 +206,7 @@
                         </div>
                     </div>
 
-                    <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="fas fa-flask"></i>
-              <span data-purecounter-start="0" data-purecounter-end="12" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Research Labs</p>
-            </div>
-          </div> -->
-
-                    <!-- <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="fas fa-award"></i>
-              <span data-purecounter-start="0" data-purecounter-end="150" data-purecounter-duration="1" class="purecounter"></span>
-              <p>Awards</p>
-            </div>
-          </div> -->
+                   
 
                 </div>
 
@@ -250,7 +244,7 @@
                         <div class="icon-box">
                             <div class="icon"><i class="fas fa-hospital-user"></i></div>
                             <h4><a href="">Checkups</a></h4>
-                            <p>Ypu can visit us even you haven't booked your appointment. We will provide you the precise suggestions and checkups.</p>
+                            <p>You can visit us even withoutbooking an appointment. We will provide you the precise suggestions and checkups.</p>
                         </div>
                     </div>
 
@@ -400,7 +394,7 @@
 
 
 
-
+ <main id="main" class="main">
 
  <div class="row">
         <div class="col-lg-10">
@@ -408,7 +402,7 @@
           <div class="card">
             <div class="card-body">
 
-
+            <div class="text-center">
               <form method="POST" action="function.php" enctype="multipart/form-data">
                 <div class="row mb-3">
               
@@ -505,11 +499,11 @@
 </form>
 
 
-
 </div>
 </div>
 </div>
-
+</div>
+        </main>
 
 
 
@@ -976,7 +970,7 @@
                             <div class="email">
                                 <i class="bi bi-envelope"></i>
                                 <h4>Email:</h4>
-                                <p>info@example.com</p>
+                                <p>medicare_aviskar123@gmail.com</p>
                             </div>
 
                             <div class="phone">
@@ -991,7 +985,7 @@
 
                     <div class="col-lg-8 mt-5 mt-lg-0">
 
-                        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <form method="POST" action="function.php" enctype="multipart/form-data">
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -1001,17 +995,17 @@
                                 </div>
                             </div>
                             <div class="form-group mt-3">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                                <input type="text" class="form-control" name="subject1" id="subject" placeholder="Subject" required>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                <textarea class="form-control" name="message1" rows="5" placeholder="Message" required></textarea>
                             </div>
-                            <div class="my-3">
+                            <!-- <div class="my-3">
                                 <div class="loading">Loading</div>
                                 <div class="error-message"></div>
                                 <div class="sent-message">Your message has been sent. Thank you!</div>
-                            </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            </div> -->
+                            <div class="text-center"><button class ="btn btn-primary"name ="message2" type="submit">Send Message</button></div>
                         </form>
 
                     </div>
@@ -1081,6 +1075,8 @@
                 <div class="copyright">
                     &copy; Copyright <strong><span>Medicare</span></strong>. All Rights Reserved
                 </div>
+                </div>
+    
                 <div class="credits">
                     <!-- All the links in the footer should remain intact. -->
                     <!-- You can delete the links only if you purchased the pro version. -->

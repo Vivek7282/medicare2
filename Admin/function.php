@@ -18,8 +18,10 @@ if(isset($_POST['addUser']))
         while($row=$result->fetch_object())
         {
             $_SESSION['userId'] = $row->USER_ID;
-            $_SESSION['userName'] = $row->NAME;
-            $_SESSION['usePic'] = $row->IMAGE;  
+            $_SESSION['userName'] = $row->U_NAME;
+            $_SESSION['usePic'] = $row->IMAGES; 
+            $_SESSION['contact'] = $row->CONTACT;
+            $_SESSION['email'] = $row->EMAIL; 
             header('location:adminDashboard.php');
         }
     }

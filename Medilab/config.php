@@ -6,5 +6,5 @@ if($mysqli->conect_error){
     die('Cannot connect with database');
 } 
 
- echo 'Database connected1';
+//  echo 'Database connected1';
 ?>

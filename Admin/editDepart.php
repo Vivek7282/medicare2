@@ -91,4 +91,5 @@ require_once('config.php');
               </div>
               
               </div>
+        </main>
               <?php include ('footer.php');?>

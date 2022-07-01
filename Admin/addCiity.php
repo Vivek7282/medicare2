@@ -1,5 +1,5 @@
 <?php include ('header.php');?>
-
+<main id="main" class="main">
 
 <div class="row">
 
@@ -45,4 +45,5 @@ if(isset($_GET['msg']))
               </div>
               </div>
               </div>
+</main>
               <?php include ('footer.php');?>

@@ -1,4 +1,5 @@
 <?php include ('header.php');?>
+<main id="main" class="main">
 <div class="row">
         <div class="col-lg-10">
 
@@ -145,5 +146,5 @@
               </div>
               </div>
               </div>
-
+          </main>
 <?php include ('footer.php');?>
