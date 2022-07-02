@@ -134,7 +134,7 @@ if(!isset($_SESSION['userId']))
         </a>
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
-            <a href="viewAppointments.php">
+            <a href="viewDoctor.php">
               <i class="bi bi-circle"></i><span>View Doctor</span>
             </a>
           </li>
