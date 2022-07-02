@@ -56,6 +56,35 @@ if(isset($_POST['addCity']))
 }
 
 
+//Add ambulance
+
+
+if(isset($_POST['addAmbu']))
+{
+   
+    $name1=$_POST['cname'];
+    $name2=$_POST['fnumber'];
+    $name3=$_POST['anumber'];
+   
+
+
+    $query="INSERT INTO Ambulance(D_Nname,phone,A_number) VALUES ('$name1','$name2','$name3')";
+    
+    
+        if($mysqli->query($query) === true)
+    {
+       
+            header('location:addAmbulance.php?msg = Ambulance Added Successfully');
+        
+    }
+    else{ 
+
+        header('location:addAmbulance.php?msg= Ambulance Not added ');
+    }
+
+}
+
+
 
 
 

@@ -172,6 +172,11 @@
                             <h4 class="title"><a href="../Admin/index.php">Admin</a></h4>
                             <p class="description">Only verified of Medicare can login and can add doctors, cities, patients and view and remove cities, doctors and patients.</p>
                         </div>
+                        <div class="icon-box">
+                            <div class="icon"><i class="fas fa-bus"></i></div>
+                            <h4 class="title"><a href="viewAmbulance.php">Ambulance</a></h4>
+                            <p class="description">You can call ambulance by a phone call.</p>
+                        </div>
                     </div>
                 </div>
 
