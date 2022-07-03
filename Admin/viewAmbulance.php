@@ -6,7 +6,6 @@
             <header class="panel-heading">
                 Ambulance_record
 </header>
-
 <?php
 if(isset($_GET['msg'])){
     echo $_GET['msg'];
@@ -51,10 +50,6 @@ require_once('config.php');
         }
     }
     
-
-
-
-
 
 ?>
 
