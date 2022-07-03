@@ -101,7 +101,7 @@
                         <div class="content">
                             <h3>Why Choose Medicare?</h3>
                             <p>
-                                We are a team of distinguished doctors and staffs members, always there to help out our patients in need at the earliest possible. With varitiy of facilities, we come up with solutions to your queries.
+                                we believe that every person has the right to be treated with respect and consideration. Therefore at Medicare, we care about our patients.We care about their families who are anxious and worried. We care about our colleagues and how we provide care.And because we care, we will sincere,compassionate and sensitive to make a difference in the lives we touch.
                             </p>
                             <div class="text-center">
                                 <!-- <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
@@ -1082,7 +1082,7 @@
                 </div>
                 <div class="credits">
       
-      Designed by <a href="../Admin/index.php">Vivek , Monisha, Pranshu</a>
+      Designed by <a href="../Admin/index.php">Vivek, Pranshu, Monisha</a>
                 </div>
     
                
