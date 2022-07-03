@@ -2,7 +2,6 @@
 <main id="main" class="main">
 <div class="row">
         <div class="col-lg-10">
-
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">Add_User</h5>
@@ -39,13 +38,6 @@
                   </div>
                 </div>
 
-
-
-               
-
-                
-
-                
 
 
                 <div class="row mb-3">
