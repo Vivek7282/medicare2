@@ -148,7 +148,7 @@ require_once('config.php');
 
     <td><?php echo $row->A_Name   ?></td>
     <td>
-           <input type="button"class ="btn btn-primary" onclick="location.href='function.php';" value="View" />
+           <input type="button"class ="btn btn-primary" onclick="location.href='viewMessage.php';" value="View" />
             
             <input type="button"class ="btn btn-danger" onclick="location.href='function.php?cid=<?php echo $row->A_Name;?>';" value="Remove" />
 

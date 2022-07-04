@@ -4,8 +4,9 @@
     <div class ="col-lg-12">
         <section class ="panel">
             <header class="panel-heading">
-                Ambulance_record
+                Message
 </header>
+
 <?php
 if(isset($_GET['msg'])){
     echo $_GET['msg'];
@@ -18,18 +19,17 @@ if(isset($_GET['msg'])){
 
 <table class="table table-striped table-advance table-hove">
     <tbody>
-        <tr>
-            <th><i class="icon_profile"></i>Driver Name</th>
-            <th>Phone No.</th>
-            <th>Ambulance No.</th>
-</tr>
+        <!-- <tr>
+            <th><i class="icon_profile"></i>City_Name</th>
+            <th>Options</th>
+</tr> -->
 
 <?php
 require_once('config.php');
 
 
 
-    $query= "SELECT * FROM Ambulance " ;
+    $query= "SELECT * FROM Information " ;
 
     if($result= $mysqli->query($query))
     {
@@ -40,11 +40,11 @@ require_once('config.php');
             ?>
             <tr>
 
-    <td><?php echo $row->D_Nname   ?></td>
-    <td><?php echo $row->phone   ?></td>
-    <td><?php echo $row->A_number   ?></td>
-    
-
+    <td><?php echo $row->Info  ?></td>
+    <td>
+        
+</div>
+</td>
 </tr>
 <?php
         }

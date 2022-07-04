@@ -101,7 +101,7 @@
                         <div class="content">
                             <h3>Why Choose Medicare?</h3>
                             <p>
-                                We are a team of distinguished doctors and staffs members, always there to help out our patients in need at the earliest possible. With varitiy of facilities, we come up with solutions to your queries.
+                                we believe that every person has the right to be treated with respect and consideration. Therefore at Medicare, we care about our patients.We care about their families who are anxious and worried. We care about our colleagues and how we provide care.And because we care, we will sincere,compassionate and sensitive to make a difference in the lives we touch.
                             </p>
                             <div class="text-center">
                                 <!-- <a href="#" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a> -->
@@ -330,19 +330,12 @@
                 }
             }
                             ?>
-
-
-
-
              
               </select>
                             <div class="validate"></div>
                         </div>
                         <div class="col-md-4 form-group mt-3">
                             <select name="doctor" id="doctor" class="form-select">
-
-
-
                             <option value="">Select Doctor</option>
                                 <?php
                                 require('config.php');
@@ -359,21 +352,11 @@
                 }
             }
                             ?>
-
-
-
-
-
-
-
-
-
                 
               </select>
                             <div class="validate"></div>
                         </div>
                     </div>
-
                     <div class="form-group mt-3">
                         <textarea class="form-control" name="message" rows="5" placeholder="Message (Optional)"></textarea>
                         <div class="validate"></div>
@@ -388,7 +371,6 @@
             }
               ?>
                   <button type="reset" class="btn btn-secondary">Reset</button>
-
                 </div>
                 
 </form>
@@ -778,10 +760,8 @@
         <!-- ======= Testimonials Section ======= -->
         <!-- <section id="testimonials" class="testimonials">
       <div class="container">
-
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-wrap">
                 <div class="testimonial-item">
@@ -860,7 +840,6 @@
         <!-- </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
     </section> End Testimonials Section -->
 
@@ -1082,7 +1061,7 @@
                 </div>
                 <div class="credits">
       
-      Designed by <a href="../Admin/index.php">Vivek , Monisha, Pranshu</a>
+      Designed by <a href="../Admin/index.php">Vivek, Pranshu, Monisha</a>
                 </div>
     
                

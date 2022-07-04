@@ -6,7 +6,6 @@
             <header class="panel-heading">
                 Patient_Record
 </header>
-
 <?php
 if(isset($_GET['msg'])){
     echo $_GET['msg'];
