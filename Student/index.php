@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>ADMIN LOGIN</title>
+  <title>Student login</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -45,7 +45,7 @@
               <div class="d-flex justify-content-center py-4">
                 <a href="index.html" class="logo d-flex align-items-center w-auto">
                   <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">MNNIT WEB Admin</span>
+                  <span class="d-none d-lg-block">Mnnit Student</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -68,20 +68,20 @@
                       </div>
                     </div>
 
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                       <label for="yourPassword" class="form-label" >Password</label>
                       <input type="password" name="pass" class="form-control" id="yourPassword" required>
                       <div class="invalid-feedback">Please enter your password!</div>
-                    </div>
+                    </div> -->
 
                     <div class="col-12">
                       <div class="form-check">
                         <input class="form-check-input" type="checkbox" name="remember" value="true" id="rememberMe">
                         <label class="form-check-label" for="rememberMe">Remember me</label>
-                      </div>
+                     </div>
                     </div>
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit" name='addUser'>Login</button>
+                      <button class="btn btn-primary w-100" type="submit" name='addDoc'>Login</button>
                     </div> 
                     <!-- <div class="col-12">
                       <p class="small mb-0">Don't have account? <a href="pages-register.html">Create an account</a></p>
@@ -103,7 +103,6 @@
       </section>
 
     </div>
-  
   </main><!-- End #main -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

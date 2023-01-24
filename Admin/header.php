@@ -1,10 +1,10 @@
 <?php 
 session_start();
-if(!isset($_SESSION['userId']))
-{
-    echo '1';
-    header('location:index.php?msg= You have to login first');
-}
+// if(!isset($_SESSION['userId']))
+// {
+//     echo '1';
+//     header('location:index.php?msg= You have to login first');
+// }
 ?> 
 
 <!DOCTYPE html>
@@ -14,7 +14,7 @@ if(!isset($_SESSION['userId']))
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Mediare Admin panel</title>
+  <title>MNNIT Admin panel</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -47,9 +47,9 @@ if(!isset($_SESSION['userId']))
   <header id="header" class="header fixed-top d-flex align-items-center">
 
     <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
+      <a href="" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">MedicareAdmin</span>
+        <span class="d-none d-lg-block">MNNIT Admin</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -61,13 +61,16 @@ if(!isset($_SESSION['userId']))
 
         
        
-        
+      <a class="dropdown-item d-flex align-items-center" href="logout.php">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a> 
 
       <li class="nav-item dropdown pe-3">
 
  <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-  <img width='20px' height='20px' src="" alt="Profile" src="<?php if(isset($_SESSION['userPic'])){echo $_SESSION['userPic'];}?>" class="rounded-circle">
-  <span class="d-none d-md-block dropdown-toggle ps-2"> <?php  if(isset($_SESSION['userName'])){echo $_SESSION['userName'];}  ?>   </span>
+  <!-- <img width='20px' height='20px' src="" alt="Profile" src="<?php if(isset($_SESSION['userPic'])){echo $_SESSION['userPic'];}?>" class="rounded-circle"> -->
+  <!-- <span class="d-none d-md-block dropdown-toggle ps-2"> <?php  if(isset($_SESSION['userName'])){echo $_SESSION['userName'];}  ?>   </span> -->
 </a> 
 
 <!-- End Profile Iamge Icon -->
@@ -108,194 +111,58 @@ if(!isset($_SESSION['userId']))
   </header><!-- End Header -->
 
   
-  <main id="main" class="main">
-
-    
-
-<div class ="row">
-    <div class ="col-lg-12">
-        <section class ="panel">
-            <header class="panel-heading">
-                Messsages for Admin
-</header>
-
-
-
-
-
-<table class="table table-striped table-advance table-hove">
-    <tbody>
-        <tr>
-            <th><i class="icon_profile"></i>User_name</th>
-            <th>Options</th>
-</tr>
-
-<?php
-require_once('config.php');
-
-
-
-    $query= "SELECT * FROM Information " ;
-
-    if($result= $mysqli->query($query))
-    {
-        while($row=$result->fetch_object())
-        {
-            
-
-            ?>
-            <tr>
-
-    <td><?php echo $row->A_Name   ?></td>
-    <td>
-           <input type="button"class ="btn btn-primary" onclick="location.href='viewMessage.php';" value="View" />
-            
-            <input type="button"class ="btn btn-danger" onclick="location.href='function.php?cid=<?php echo $row->A_Name;?>';" value="Remove" />
-
-
-            <!-- <a class ="btn btn-success" herf="editcity.php?id=<?php echo $row->D_ID;?>"><i class="icon_check_alt2">Edit</i></a>
-          
-            <a class ="btn btn-danger" herf="function.php?cid=<?php echo $row->D_ID;?>"><i class="icon_close_alt2">Remove</i></a>
-           -->
-</div>
-</td>
-</tr>
-<?php
-        }
-    }
-    
-
-
-
-
-
-?>
-
-
-
-<tbody>
-</table>
-</section>
-</div>
-</div>
-
-
-
-
-
-
-    
-
-  </main><!-- End #main -->
-
+ 
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
+        <a class="nav-link collapsed" href="adminDashboard.php" >
           <i class="bi bi-grid"></i>
           <span>Dashboard</span>
         </a>
       </li><!-- End Dashboard Nav -->
 
       
-
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Doctors</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="changeSem.php">
+          <i class="bi bi-grid"></i>
+          <span>Change Semester </span>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="addDoc.php">
-              <i class="bi bi-circle"></i><span>Add Doctors</span>
-            </a>
-          </li>
-          <li>
-            <a href="viewDoc.php">
-              <i class="bi bi-circle"></i><span>View Doctors</span>
-            </a>
-          </li>
-          </li>
-        </ul>
-      </li><!-- End Forms Nav -->
-
-
-
-
+      </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Cities</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="addGradeper.php">
+          <i class="bi bi-grid"></i>
+          <span>Add Grade</span>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="addCiity.php">
-              <i class="bi bi-circle"></i><span>Add Cities</span>
-            </a>
-          </li>
-          <li>
-            <a href="viewCitie.php">
-              <i class="bi bi-circle"></i><span>View Cities</span>
-            </a>
-          </li>
-          </li>
-        </ul>
-      </li><!-- End Forms Nav -->
+      </li>
 
 
+      
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Ambulance</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="">
+          <i class="bi bi-grid"></i>
+          <span>Facalty With No Grade</span>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="addAmbulance.php">
-              <i class="bi bi-circle"></i><span>Add Ambulance</span>
-            </a>
-          </li>
-          <li>
-            <a href="viewAmbulance.php">
-              <i class="bi bi-circle"></i><span>View Ambulance</span>
-            </a>
-          </li>
-          </li>
-        </ul>
-      </li><!-- End Forms Nav -->
-
+      </li>
       <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Departments</span><i class="bi bi-chevron-down ms-auto"></i>
+        <a class="nav-link collapsed" href="viewMessage.php">
+          <i class="bi bi-grid"></i>
+          <span>Message for Admins</span>
         </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          <li>
-            <a href="addDeprt.php">
-              <i class="bi bi-circle"></i><span>Add Departments</span>
-            </a>
-          </li>
-          <li>
-            <a href="viewDepart.php">
-              <i class="bi bi-circle"></i><span>View Departments</span>
-            </a>
-          </li>
-          </li>
-        </ul>
-      </li><!-- End Forms Nav -->
+      </li>
 
-      <li class="nav-item">
-        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
-          <i class="bi bi-journal-text"></i><span>Patients</span><i class="bi bi-chevron-down ms-auto"></i>
-        </a>
-        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
-          
-            <a href="viewPaitent.php">
-              <i class="bi bi-circle"></i><span>View Patients</span>
-            </a>
-          </li>
-          </li>
-        </ul>
-      </li><!-- End Forms Nav -->
 
+
+
+
+      
+
+
+
+      
+      
 <!-- 
       <li class="nav-item">
         <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">

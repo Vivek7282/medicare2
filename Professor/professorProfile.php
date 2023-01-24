@@ -1,5 +1,6 @@
-<?php include('header.php');?>
 
+<!DOCTYPE html>
+<html lang="en">
 
 
 
@@ -11,7 +12,7 @@
     <div class="d-flex align-items-center justify-content-between">
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">DEAN WEB Admins</span>
+        <span class="d-none d-lg-block">MNNIT Professors</span>
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
@@ -76,7 +77,7 @@ $id=$_SESSION['userId'];
 
               <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
               <h2><?php  if(isset($_SESSION['userName'])){echo $_SESSION['userName'];}  ?></h2>
-              <h3>Admin</h3>
+              <h3>Professor</h3>
               <!-- <div class="social-links mt-2">
                 <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                 <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
@@ -117,7 +118,7 @@ $id=$_SESSION['userId'];
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
                   <h5 class="card-title">About</h5>
-                  <p class="small fst-italic">I am admin of this Website.</p>
+                  <!-- <p class="small fst-italic">I am a  at MNNIT Allahabad.</p> -->
 
                   <h5 class="card-title">Profile Details</h5>
 
@@ -126,7 +127,10 @@ $id=$_SESSION['userId'];
                     <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['userName'])){echo $_SESSION['userName'];}  ?></div>
                   </div>
 
-                  
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Department</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['d_id'])){echo $_SESSION['d_id'];}  ?></div>
+                  </div>
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Email</div>
@@ -135,10 +139,14 @@ $id=$_SESSION['userId'];
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Contact</div>
-                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['contact'])){echo $_SESSION['contact'];}  ?></div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['con'])){echo $_SESSION['con'];}  ?></div>
                   </div>
 
-                  
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Date of Birth</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['dob'])){echo $_SESSION['dob'];}  ?></div>
+                  </div>
+
 
 
 
@@ -172,7 +180,12 @@ $id=$_SESSION['userId'];
 
                    
 
-                    
+                    <div class="row mb-3">
+                      <label for="company" class="col-md-4 col-lg-3 col-form-label">Department</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="add" type="text" class="form-control" id="company" value="<?php  if(isset($_SESSION['d_id'])){echo $_SESSION['d_id'];}  ?>">
+                      </div>
+                    </div>
 
                     <div class="row mb-3">
                       <label for="Job" class="col-md-4 col-lg-3 col-form-label">Email</label>
@@ -184,11 +197,16 @@ $id=$_SESSION['userId'];
                     <div class="row mb-3">
                       <label for="Country" class="col-md-4 col-lg-3 col-form-label">Contact</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="con" type="text" class="form-control" id="Country" value="<?php  if(isset($_SESSION['contact'])){echo $_SESSION['contact'];}  ?>">
+                        <input name="con" type="text" class="form-control" id="Country" value="<?php  if(isset($_SESSION['con'])){echo $_SESSION['con'];}  ?>">
                       </div>
                     </div>
 
-                    
+                    <div class="row mb-3">
+                      <label for="Address" class="col-md-4 col-lg-3 col-form-label">Date of Birth</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="dob" type="text" class="form-control" id="Address" value="<?php  if(isset($_SESSION['dob'])){echo $_SESSION['dob'];}  ?>">
+                      </div>
+                    </div>
 
                    
                    
@@ -237,11 +255,6 @@ $id=$_SESSION['userId'];
 
 </body>
 
+</html>
 
-
-
-
-
-<?php include('footer.php');?>
-
-
+<?php include('footer.php')?>

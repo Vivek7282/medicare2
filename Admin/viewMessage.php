@@ -29,7 +29,7 @@ require_once('config.php');
 
 
 
-    $query= "SELECT * FROM Information " ;
+    $query= "SELECT * FROM Message " ;
 
     if($result= $mysqli->query($query))
     {

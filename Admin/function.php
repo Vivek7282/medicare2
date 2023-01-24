@@ -11,7 +11,7 @@ if(isset($_POST['addUser']))
 
     $email=$_POST['email'];
     $pass=md5($_POST['pass']);
-    $query= "SELECT * FROM USERS where email= '$email' and passwor='$pass' ";
+    $query= "SELECT * FROM Admins where email= '$email' and passwor='$pass' ";
 
     if($result= $mysqli->query($query))
     {
@@ -167,6 +167,97 @@ if(isset($_POST['addDept']))
     }
 
 }
+
+
+// change semester
+
+
+
+if(isset($_POST['change']))
+{
+   
+    $current=$_POST['csem'];
+    $prev=$_POST['psem'];
+   
+
+
+    
+    $query = "UPDATE Current_Sem SET Semester='$current' WHERE Semester='$prev'";
+    
+        if($mysqli->query($query) === true)
+    {
+       
+            header('location:adminDashboard.php?msg = Semester Changed Successfully');
+        
+    }
+    else{ 
+
+        header('location:changeSem.php?msg= Semester Not changed ');
+    }
+
+}
+
+
+
+
+// change Couse permisssion
+
+
+
+if(isset($_POST['addCourses1']))
+{
+   
+    
+    $per=$_POST['ptype'];
+   
+
+
+    $o=0;
+    $query = "UPDATE Permissions SET Course_Entry='$per' WHERE Ind=0";
+    
+        if($mysqli->query($query) === true)
+    {
+       
+            header('location:adminDashboard.php?msg = Permission Changed Successfully');
+        
+    }
+    else{ 
+
+        header('location:addCourse.php?msg= Permission Not changed ');
+    }
+
+}
+
+
+// change Couse permisssion
+
+
+
+if(isset($_POST['addgrade1']))
+{
+   
+    
+    $per=$_POST['gtype'];
+   
+
+
+    $o=0;
+    $query = "UPDATE Permissions SET Marks_Entry='$per' WHERE Ind=0";
+    
+        if($mysqli->query($query) === true)
+    {
+       
+            header('location:adminDashboard.php?msg = Permission Changed Successfully');
+        
+    }
+    else{ 
+
+        header('location:addCourse.php?msg= Permission Not changed ');
+    }
+
+}
+
+
 
 
 

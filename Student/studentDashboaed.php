@@ -2,54 +2,13 @@
 
 
 
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/logo.png" alt="">
-        <span class="d-none d-lg-block">DEAN WEB Admins</span>
-      </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-
-    <ul class="sidebar-nav" id="sidebar-nav">
-
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="index.html">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
-        </a>
-      </li><!-- End Dashboard Nav -->
-     
-      <li class="nav-item">
-        <a class="nav-link collapsed" href="pages-register.html">
-          <i class="bi bi-card-list"></i>
-          <span>Register</span>
-        </a>
-      </li><!-- End Register Page Nav -->
-
-     
-
-    </ul>
-
-  </aside><!-- End Sidebar-->
+  
 
   <main id="main" class="main">
 
-    <div class="pagetitle">
-      <h1>Profile</h1>
-      
-    </div><!-- End Page Title -->
-
+    
 
 
 
@@ -58,14 +17,16 @@
    <?php 
 session_start();
 require_once('config.php');
-$id=$_SESSION['userId'];
+// $id=$_SESSION['userId'];
 
 ?> 
 
     
     
    
-
+<div class="pagetitle">
+  <h1> Profile</h1>
+</div>
     
     <section class="section profile">
       <div class="row">
@@ -76,17 +37,14 @@ $id=$_SESSION['userId'];
 
               <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
               <h2><?php  if(isset($_SESSION['userName'])){echo $_SESSION['userName'];}  ?></h2>
-              <h3>Admin</h3>
-              <!-- <div class="social-links mt-2">
-                <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-                <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-              </div> -->
+              <h2><?php  if(isset($_SESSION['program'])){echo $_SESSION['program'];}  ?></h2>
+              <h3>Student</h3>
+              <!-- <h3>Student</h3> -->
+              
             
             </div>
           </div>
-
+         
         </div>
 
         <div class="col-xl-8">
@@ -96,9 +54,9 @@ $id=$_SESSION['userId'];
               <!-- Bordered Tabs -->
               <ul class="nav nav-tabs nav-tabs-bordered">
 
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#profile-overview">Overview</button>
-                </li>
+                </li> -->
 
                 <li class="nav-item">
                   <button class="nav-link" data-bs-toggle="tab" data-bs-target="#profile-edit">Edit Profile</button>
@@ -117,16 +75,35 @@ $id=$_SESSION['userId'];
 
                 <div class="tab-pane fade show active profile-overview" id="profile-overview">
                   <h5 class="card-title">About</h5>
-                  <p class="small fst-italic">I am admin of this Website.</p>
+                  <p class="small fst-italic"></p>
 
                   <h5 class="card-title">Profile Details</h5>
+
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Reg. Number</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['userId'])){echo $_SESSION['userId'];}  ?></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Program</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['program'])){echo $_SESSION['program'];}  ?></div>
+                  </div>
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label ">Full Name</div>
                     <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['userName'])){echo $_SESSION['userName'];}  ?></div>
                   </div>
 
-                  
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Parents Name</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['pName'])){echo $_SESSION['pName'];}  ?></div>
+                  </div>
+
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Department</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['dName'])){echo $_SESSION['dName'];}  ?></div>
+                  </div>
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Email</div>
@@ -135,16 +112,23 @@ $id=$_SESSION['userId'];
 
                   <div class="row">
                     <div class="col-lg-3 col-md-4 label">Contact</div>
-                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['contact'])){echo $_SESSION['contact'];}  ?></div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['con'])){echo $_SESSION['con'];}  ?></div>
                   </div>
 
-                  
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label">Date of Birth</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['doa'])){echo $_SESSION['doa'];}  ?></div>
+                  </div>
 
 
 
-                  
 
-                  
+                  <div class="row">
+                    <div class="col-lg-3 col-md-4 label ">Gender</div>
+                    <div class="col-lg-9 col-md-8"><?php  if(isset($_SESSION['gender'])){echo $_SESSION['gender'];}  ?></div>
+                  </div>
+
+                
 
                 </div>
 
@@ -184,17 +168,22 @@ $id=$_SESSION['userId'];
                     <div class="row mb-3">
                       <label for="Country" class="col-md-4 col-lg-3 col-form-label">Contact</label>
                       <div class="col-md-8 col-lg-9">
-                        <input name="con" type="text" class="form-control" id="Country" value="<?php  if(isset($_SESSION['contact'])){echo $_SESSION['contact'];}  ?>">
+                        <input name="con" type="text" class="form-control" id="Country" value="<?php  if(isset($_SESSION['con'])){echo $_SESSION['con'];}  ?>">
                       </div>
                     </div>
 
-                    
+                    <!-- <div class="row mb-3">
+                      <label for="Address" class="col-md-4 col-lg-3 col-form-label">Date of Appointment</label>
+                      <div class="col-md-8 col-lg-9">
+                        <input name="doa" type="text" class="form-control" id="Address" value="<?php  if(isset($_SESSION['doa'])){echo $_SESSION['doa'];}  ?>">
+                      </div>
+                    </div>
 
-                   
+                    -->
                    
 
                     <div class="text-center">
-                      <button type="submit" class="btn btn-primary" name="updDoc">Save Changes</button>
+                      <button type="submit" class="btn btn-primary" name="updPai">Save Changes</button>
                     </div>
                   </form><!-- End Profile Edit Form -->
 
@@ -236,11 +225,6 @@ $id=$_SESSION['userId'];
   <script src="assets/js/main.js"></script>
 
 </body>
-
-
-
-
-
 
 <?php include('footer.php');?>
 
