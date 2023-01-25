@@ -90,6 +90,9 @@
 
                 </div>
               </div>
+              <div class="col-12">
+                      <button class="btn btn-primary w-100" type="submit" name='addstu'>Sign Up</button>
+                    </div> 
 
               <div class="credits">
                 

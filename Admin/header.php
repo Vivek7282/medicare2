@@ -141,7 +141,7 @@ session_start();
 
       
       <li class="nav-item">
-        <a class="nav-link collapsed" href="">
+        <a class="nav-link collapsed" href="facWithNoGrade.php">
           <i class="bi bi-grid"></i>
           <span>Facalty With No Grade</span>
         </a>

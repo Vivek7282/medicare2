@@ -43,6 +43,26 @@ if(isset($_POST['addDoc']))
     }
 
 }
+
+
+
+if(isset($_POST['addstu']))
+{
+         
+            header('location:addstudent.php');
+        
+   
+}
+
+
+
+
+
+
+
+
+
+
 //update Paitents
 if(isset($_POST['updPai']))
 {

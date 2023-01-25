@@ -101,7 +101,7 @@ session_start();
         <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
           <li>
             <a href="AddCourses.php">
-              <i class="bi bi-circle"></i><span>cources</span>
+              <i class="bi bi-circle"></i><span>courses</span>
             </a>
           </li>
           <li>
