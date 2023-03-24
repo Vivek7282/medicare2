@@ -1,0 +1,20 @@
+{
+  "name": "video_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-dev": "^8.0.0",
+    "nvs": "^0.5.2",
+    "twilio": "^4.9.0",
+    "uuid": "^9.0.0"
+  }
+}
